@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Sansita+Swashed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <title>Checklist Application</title>
+  </head>
+  <body>
+    <header class="headline"><img src="static/SBLogo.png" /></header>
+    <main class="container">
+      <div>
+        <h2><u>Your Shopping List</u></h2>
+        <div id="listsBox"></div>
+        <div>
+          <form id="shoppingItemForm">
+            <label for="quantity"></label>
+            <input
+              class="quanbox"
+              type="number"
+              id="quantity"
+              name="quantity"
+              placeholder="0"
+            />
+
+            <label for="shoppinglist"></label>
+            <input
+              class="typebox"
+              type="text"
+              id="shoppinglist"
+              name="shoppinglist"
+              placeholder="Shopping Item"
+            />
+
+            <button type="submit" class="submit">Add</button>
+          </form>
+        </div>
+        <div class="deleteAll">
+          <button type="button">Click to delete your list</button>
+        </div>
+      </div>
+    </main>
+    <script src="static/js/script.js"></script>
+  </body>
+</html>

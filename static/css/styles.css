@@ -1,0 +1,110 @@
+body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "header"
+    "listbox";
+  grid-gap: 1rem;
+  justify-items: center;
+  background-color: #85e0dc;
+}
+
+/* headline image */
+.headline {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* white box containing the shopping list */
+.container {
+  grid-area: listbox;
+  background-color: whitesmoke;
+  border: 1px solid rgba(179, 177, 177, 0.849);
+  padding: 1rem 4rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 0.5rem;
+}
+
+/* Your Shopping List (heading) */
+h2 {
+  font-family: "Amatic SC", cursive;
+  color: #48494e;
+  font-size: 2.1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* grey box that will contain the list items */
+#listsBox {
+  width: 550px;
+  height: 700px;
+  background-color: rgba(110, 182, 176, 0.274);
+  margin-bottom: 0.75rem;
+  display: block;
+  border-radius: 0.5rem;
+  overflow-y: scroll;
+  border: 1px solid rgba(179, 177, 177, 0.849);
+}
+
+form,
+.submit {
+  display: inline-block;
+  color: #48494e;
+}
+
+button {
+  background: #d37a6a77;
+  color: #48494e;
+  border: none;
+  padding: 0.2rem 2rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  transition: background-color 150ms;
+  cursor: pointer;
+  margin-left: 1rem;
+  font-family: "Amatic SC", cursive;
+}
+
+button:hover {
+  background-color: #ae2026;
+}
+
+.typebox {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.quanbox {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.deleteAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  color: #c94636;
+  font-family: "Courgette", cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: lightgray;
+}
